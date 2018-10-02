@@ -174,7 +174,7 @@ head h1{
     justify-content: center;
     align-content: center;
     grid-template-rows:    100% 100%;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 31% 31% 31%;
 
     padding: 1em 0;
     background: var(--color9);
@@ -240,36 +240,6 @@ h4{
     background-color: var(--color1);
     color: var(--color3);
 }
-
-footer{
-padding: 5em 0 2em 0;
-background-color: #1b1b1f;
-text-align: center;
-
-
-line-height: 1.5em;
-
-
-
-}
-footer .foot{
-width: 58%;
-margin: 0 auto;
-}
-footer h2{
-font-size: 1.5em;
-color: white;
-font-family: 'Raleway', sans-serif;
-margin-top: 0;
-}
-footer p{
-
-color: rgb(172, 162, 162);
-font-family: 'Raleway', sans-serif;
-
-font-size: 0.9em;
-
-}
 ul li a i{
 border-radius: 100%;
 margin: 0;
@@ -290,12 +260,93 @@ ul li i:hover{
 color: white;
 }
 
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--color8);
+    
+}
+label{
+    font-size: 0.8rem;
+    color: #717981;
+    display: block;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0 0 0.75rem 0;
+    padding-top: 1.5rem;
+}
 
-@media only screen and(max-width:800px){
-    .navbar{
+.field .entradas{
+    border-color: #e2e2e2;
+    color: #717981;
+    height: 3rem;
+    background: var(--color1);
+    border-radius: 0;
+    border: solid 2px;
+    border-radius: 3%;
+    display: block;
+    outline: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    width: 90%;
+}
+
+.mensaje{
+    padding: 3.5rem;
+}
+.descripcion{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    border-left: solid 2px;
+    
+
+}
+
+.descripcion div{
+    padding: 4rem;
+    
+}
+.descripcion div h3{
+    color: #717981;
+    display: block;
+    float: left;
+}
+
+
+.descripcion div span{
+    display: block;
+    float: left;
+
+    color: #909498
+}
+
+
+.descripcion .derecha h3{
+    color: var(--color1);
+    padding-bottom: 1em;
+}
+.descripcion .derecha span{
+    color: var(--color1);
+}
+
+textarea{
+    width: 100%;
+}
+
+@media only screen and (max-width: 640px){
+    footer {
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .links {
         display: flex;
         flex-direction: column;
+        padding: 0.2em;
     }
+    
 }
 
 
